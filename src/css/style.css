@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(180deg, rgb(117, 117, 117), rgb(255, 255, 255)) no-repeat;
+    height: 100vh;
+}
+
+@keyframes shadowAnimation {
+    0% {
+      box-shadow: 0 0 10px 2px gold, 0 0 20px 5px rgb(255, 200, 0), 0 0 30px 10px rgb(255, 200, 0);
+    }
+    50% {
+      box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0), 0 0 20px 5px rgba(255, 200, 0, 0), 0 0 30px 10px rgba(255, 200, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 10px 2px gold, 0 0 20px 5px rgb(255, 200, 0), 0 0 30px 10px rgb(255, 200, 0);
+    }
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(60, 0, 100));
+    color: gold;
+    border: 7px solid gold;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 2px gold, 0 0 20px 5px rgb(255, 200, 0), 0 0 30px 10px rgb(255, 200, 0);
+    animation: shadowAnimation 2s infinite;
+    transition: box-shadow 1.0s ease-in ease-out;
+}
+  
+.nome {
+    padding: 30px;
+}
+
+.categorias {
+    font-size: larger;
+    padding: 64px;
+    text-decoration: none;
+    color: gold;
+}
