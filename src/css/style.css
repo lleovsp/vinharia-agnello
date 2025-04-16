@@ -277,3 +277,78 @@ main {
   text-decoration: none;
   padding: 50px;
 }
+
+.vinhos {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin-top: 90px;
+  font-size: 44px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background-image: linear-gradient(180deg, rgba(43, 25, 61, 0.571), rgba(0, 0, 0, 0));
+  color: white;
+  text-shadow:
+    0 0 5px rgb(166, 0, 255),
+    0 0 10px rgb(166, 0, 255),
+    0 0 20px rgb(166, 0, 255),
+    0 0 35px rgb(166, 0, 255);
+}
+
+.vinho {
+  max-width: 350px;
+  margin: 50px;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+
+.div-vinho {
+  margin-top: 120px;
+  margin-left: 64px;
+  width: 500px;
+  border: 0.5px solid black;
+  border-radius: 20px;
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 64px;
+}
+
+.vinho-nome {
+  color: #000000;
+  text-decoration: none;
+  padding: 50px;
+  font-size: 30px
+}
+
+.vinho-text {
+  color: #000000;
+  text-decoration: none;
+  padding: 50px;
+}
+
+
+.vinho-text :hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  opacity: 0.9;
+  border-radius: 20px;
+  transition: ease-in-out 0.5s;
+  padding: 24px;
+}
+
+.espumantes {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin-top: 90px;
+  font-size: 44px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background-image: linear-gradient(180deg, rgba(43, 25, 61, 0.571), rgba(0, 0, 0, 0));
+  color: white;
+  text-shadow:
+    0 0 5px rgb(166, 0, 255),
+    0 0 10px rgb(166, 0, 255),
+    0 0 20px rgb(166, 0, 255),
+    0 0 35px rgb(166, 0, 255);
+}
