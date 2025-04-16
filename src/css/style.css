@@ -46,11 +46,12 @@ main {
 .escolha {
   display: flex;
   justify-content: center;
-  -webkit-text-stroke: 1.5px black;
-  text-shadow: 
-    2px 2px 4px rgba(0, 0, 0, 0.8),
-    4px 4px 6px rgba(0, 0, 0, 0.6);
-  font-size: 70px;
+  text-shadow:
+    0 0 5px rgb(166, 0, 255),
+    0 0 10px rgb(166, 0, 255),
+    0 0 20px rgb(166, 0, 255),
+    0 0 35px rgb(166, 0, 255);
+  font-size: 95px;
   color: rgb(255, 255, 255);
   font-style: italic;
   padding-top: 350px;
@@ -135,11 +136,78 @@ main {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
+.criador-div {
+  margin-top: 120px;
+  margin-left: 64px;
+  width: 500px;
+  border: 0.5px solid black;
+  border-radius: 20px;
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 64px;
+}
+
+.criador-text :hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  opacity: 0.9;
+  border-radius: 20px;
+  transition: ease-in-out 0.5s;
+}
+
 .criador {
+  text-transform: uppercase;
+  font-size: larger;
   color: #000000;
   text-decoration: none;
   padding: 50px;
+  letter-spacing: 2px;
 }
+.text {
+  color: #000000;
+  text-decoration: none;
+  padding: 50px;
+  letter-spacing: 1px;
+}
+
+.text2 {
+  color: #000000;
+  font-size: large;
+  text-decoration: none;
+  padding: 50px;
+  letter-spacing: 1px;
+}
+
+.destaque-div {
+  margin-top: 120px;
+  margin-left: 64px;
+  width: 500px;
+  border: 0.5px solid black;
+  border-radius: 20px;
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 64px;
+}
+
+.destaque-text :hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  opacity: 0.9;
+  border-radius: 20px;
+  transition: ease-in-out 0.5s;
+}
+
+.dest {
+    text-transform: uppercase;
+  font-size: larger;
+  color: #000000;
+  text-decoration: none;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  letter-spacing: 2px;
+}
+
 .destaque {
   color: #000000;
   text-decoration: none;
@@ -151,11 +219,51 @@ main {
   text-decoration: none;
   padding: 50px;
 }
+
+.visita-div {
+  margin-top: 120px;
+  margin-left: 64px;
+  width: 500px;
+  border: 0.5px solid black;
+  border-radius: 20px;
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 64px;
+}
+
+.visita-text :hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  opacity: 0.9;
+  border-radius: 20px;
+  transition: ease-in-out 0.5s;
+}
+
 .visita {
   color: #000000;
   text-decoration: none;
   padding: 50px;
 }
+
+.slogan-div {
+  margin-top: 120px;
+  margin-left: 64px;
+  width: 500px;
+  border: 0.5px solid black;
+  border-radius: 20px;
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 64px;
+}
+
+.slogan-text :hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  opacity: 0.9;
+  border-radius: 20px;
+  transition: ease-in-out 0.5s;
+}
+
 .slogan {
   color: #000000;
   text-decoration: none;
