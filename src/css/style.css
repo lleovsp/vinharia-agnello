@@ -451,3 +451,20 @@ main {
   transition: ease-in-out 0.5s;
   padding: 24px;
 }
+
+.compras {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin-top: 90px;
+  font-size: 44px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background-image: linear-gradient(180deg, rgba(43, 25, 61, 0.571), rgba(0, 0, 0, 0));
+  color: white;
+  text-shadow:
+    0 0 5px rgb(166, 0, 255),
+    0 0 10px rgb(166, 0, 255),
+    0 0 20px rgb(166, 0, 255),
+    0 0 35px rgb(166, 0, 255);
+}
