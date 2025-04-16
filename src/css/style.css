@@ -1,40 +1,163 @@
-body {
-    background: linear-gradient(180deg, rgb(117, 117, 117), rgb(255, 255, 255)) no-repeat;
-    height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes shadowAnimation {
-    0% {
-      box-shadow: 0 0 10px 2px gold, 0 0 20px 5px rgb(255, 200, 0), 0 0 30px 10px rgb(255, 200, 0);
-    }
-    50% {
-      box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0), 0 0 20px 5px rgba(255, 200, 0, 0), 0 0 30px 10px rgba(255, 200, 0, 0);
-    }
-    100% {
-      box-shadow: 0 0 10px 2px gold, 0 0 20px 5px rgb(255, 200, 0), 0 0 30px 10px rgb(255, 200, 0);
-    }
-  }
-  
-  header {
-    display: flex;
-    justify-content: center;
-    margin: 35px;
-    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(60, 0, 100));
-    color: gold;
-    border: 7px solid gold;
-    border-radius: 25px;
-    box-shadow: 0 0 10px 2px gold, 0 0 20px 5px rgb(255, 200, 0), 0 0 30px 10px rgb(255, 200, 0);
-    animation: shadowAnimation 2s infinite;
-    transition: box-shadow 1.0s ease-in ease-out;
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  padding: 50px;
 }
-  
-.nome {
-    padding: 30px;
+
+.nav-list a:hover {
+  opacity: 0.5;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow:
+    0 0 5px rgb(166, 0, 255),
+    0 0 10px rgb(166, 0, 255),
+    0 0 20px rgb(166, 0, 255),
+    0 0 35px rgb(166, 0, 255);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background-image: linear-gradient(45deg, black, rgb(43, 0, 66));
+  height: 10vh;
+}
+
+main {
+  background: url("/vinharia-agnello/src/imgs/Vinicola-Agnello.png") no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+}
+
+.escolha {
+  display: flex;
+  justify-content: center;
+  -webkit-text-stroke: 1.5px black;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    4px 4px 6px rgba(0, 0, 0, 0.6);
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  padding-top: 350px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.5s;
+}
+
+@media (max-width: 2000px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 20vw;
+    height: 90vh;
+    background-image: linear-gradient(145deg, rgb(43, 0, 66), black);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.criador {
+  color: #000000;
+  text-decoration: none;
+  padding: 50px;
+}
+.destaque {
+  color: #000000;
+  text-decoration: none;
+  padding: 50px;
 }
 
 .categorias {
-    font-size: larger;
-    padding: 64px;
-    text-decoration: none;
-    color: gold;
+  color: #000000;
+  text-decoration: none;
+  padding: 50px;
+}
+.visita {
+  color: #000000;
+  text-decoration: none;
+  padding: 50px;
+}
+.slogan {
+  color: #000000;
+  text-decoration: none;
+  padding: 50px;
 }
