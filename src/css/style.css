@@ -352,3 +352,44 @@ main {
     0 0 20px rgb(166, 0, 255),
     0 0 35px rgb(166, 0, 255);
 }
+
+.espumante {
+  max-width: 350px;
+  margin: 50px;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+
+.div-espumante {
+  margin-top: 120px;
+  margin-left: 64px;
+  width: 500px;
+  border: 0.5px solid black;
+  border-radius: 20px;
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 64px;
+}
+
+.espumante-nome {
+  color: #000000;
+  text-decoration: none;
+  padding: 50px;
+  font-size: 30px
+}
+
+.espumante-text {
+  color: #000000;
+  text-decoration: none;
+  padding: 50px;
+}
+
+
+.espumante-text :hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  opacity: 0.9;
+  border-radius: 20px;
+  transition: ease-in-out 0.5s;
+  padding: 24px;
+}
