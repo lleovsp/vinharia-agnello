@@ -1,12 +1,3 @@
-nomeVinho = ("Digite o nome do vinho:");
-tipoVinho = ("Digite o tipo do vinho (Tinto, Branco ou Rosé):");
-safraVinho = ("Digite o ano da safra do vinho:");
-
-
-// Adm
-quantidadeEstoque = ("Digite a quantidade em estoque do vinho:");
-
-
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
       this.mobileMenu = document.querySelector(mobileMenu);
@@ -51,3 +42,18 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+var nomeVinho = prompt("Digite o nome do vinho:");
+console.log("Nome do vinho: " + nomeVinho);
+alert("Nome cadastrado com sucesso! Veja os detalhes no console");
+var tipoVinho = prompt("Digite o tipo do vinho (Tinto, Branco ou Rosé):");
+console.log("Tipo do vinho: " + tipoVinho);
+alert("Tipo do vinho cadastrado com sucesso! Veja os detalhes no console");
+var safraVinho = prompt("Digite o ano da safra do vinho:");
+console.log("Ano da Safra: " + safraVinho);
+alert("Ano da Safra do vinho cadastrado com sucesso! Veja os detalhes no console");
+var quantidadeEstoque = prompt("Digite a quantidade em estoque do vinho:");
+console.log("Quantidade em estoque: " + quantidadeEstoque);
+alert("Quantidade em estoque cadastrada com sucesso! Veja os detalhes no console.");
+
+
