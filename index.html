@@ -1,240 +1,525 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CP1</title>
+    <title>Vinícola Agnello</title>
     <link rel="stylesheet" href="src/css/style.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
     <header>
-        <nav>
-            <a class="logo">Vinícola Agnello</a>
+        <nav class="navbar">
+            <a href="#" class="logo">Vinícola Agnello</a>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><a href="#vinicola">Vinícola</a></li>
-                <li><a href="#vinhos">Vinhos</a></li>
-                <li><a href="#espumantes">Espumantes</a></li>
-                <li><a href="#sucos">Sucos</a></li>
-                <li><a href="#compras">Compras</a></li>
+                <li><a href="#nossa-historia" class="nav-link">História</a></li>
+                <li><a href="#vinhos" class="nav-link">Vinhos</a></li>
+                <li><a href="#espumantes" class="nav-link">Espumantes</a></li>
+                <li><a href="#sucos" class="nav-link">Sucos</a></li>
+                <li><a href="#nossa-vinicola" class="nav-link">Vinícola</a></li>
+                <li><a href="#compras" class="nav-link">Compras</a></li>
             </ul>
         </nav>
     </header>
 
-    <div>
-        <main>
-            <p class="escolha">Escolha Seu Vinho</p>
-        </main>
-    </div>
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Escolha Seu Vinho</h1>
+            <a href="#vinhos" class="hero-btn">Descobrir Vinhos</a>
+        </div>
+    </section>
 
-    <div class="criador-div" id="vinicola">
-        <h3 class="criador">Vinícola Agnello – Da raiz à taça, uma história de verdade.</h3>
+    <section class="section" id="nossa-historia">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossa História</h2>
+                <p class="section-subtitle">Conheça a tradição e a paixão por trás da Vinícola Agnello</p>
+            </div>
+            
+            <div class="content-card">
+                <h3 class="content-title">Vinícola Agnello – Da raiz à taça, uma história de verdade</h3>
+                <div class="content-text">
+                    <p>
+                        Fundada em 1932, em Bento Gonçalves (RS), a Vinícola Agnello é resultado do sonho de Giovanni Agnello, imigrante vindo do Vêneto, na Itália, que trouxe na bagagem mais do que técnicas de vinificação — trouxe valores. Em meio aos parreirais da Serra Gaúcha, ele viu na terra brasileira o potencial de continuar a tradição da família: transformar uvas em experiências.
+                    </p>
+                    <p>
+                        O início foi humilde: produção artesanal, feita com os pés no chão e o coração no vinho. A reputação cresceu de boca em boca. Com o tempo, a vinícola passou por gerações, sempre mantendo um ponto inegociável: a qualidade acima de tudo.
+                    </p>
+                    <p>
+                        Hoje, já na quarta geração, a Vinícola Agnello une tradição e inovação. Segue sendo uma empresa 100% familiar, com vinhos premiados e presença crescente no mercado nacional.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <h3 class="content-title">Espumantes premiados: leveza com identidade</h3>
+                <div class="content-text">
+                    <p>Especialidade da casa, os espumantes Agnello são elaborados com dois métodos consagrados:</p>
+                    <ul class="categories-list">
+                        <li>
+                            Charmat (ou Martinotti): fermentação em tanques de inox, ideal para espumantes jovens, frutados e refrescantes.
+                        </li>
+                        <li>
+                            Tradicional (Champenoise): segunda fermentação na garrafa, com longos períodos de autólise, criando espumantes estruturados, elegantes e persistentes.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <h3 class="content-title">Visitação e experiência enoturística</h3>
+                <div class="content-text">
+                    <p>A vinícola está aberta à visitação com agendamento, oferecendo:</p>
+                    <ul class="categories-list">
+                        <li>Tour guiado pela produção e cave subterrânea.</li>
+                        <li>Degustação de rótulos selecionados.</li>
+                        <li>Loja com venda direta e produtos exclusivos.</li>
+                        <li>Eventos sazonais com gastronomia e música.</li>
+                        <li>Cada visitante conhece de perto o que torna a Vinícola Agnello diferente: o envolvimento da família em todas as etapas e a busca por excelência sem frescura.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="criador-text">
-            <p class="text">
-                Fundada em 1932, em Bento Gonçalves (RS), a Vinícola Agnello é resultado do sonho de Giovanni Agnello, imigrante vindo do Vêneto, na Itália, que trouxe na bagagem mais do que técnicas de vinificação — trouxe valores. Em meio aos parreirais da Serra Gaúcha, ele viu na terra brasileira o potencial de continuar a tradição da família: transformar uvas em experiências.
+    <section class="products-section" id="vinhos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="products-title">Vinhos</h2>
+                <p class="section-subtitle">Nossa seleção de vinhos premiados</p>
+            </div>
             
-             O início foi humilde: produção artesanal, feita com os pés no chão e o coração no vinho. A reputação cresceu de boca em boca. Com o tempo, a vinícola passou por gerações, sempre mantendo um ponto inegociável: a qualidade acima de tudo.
+            <div class="products-grid">
+                <div class="product-card" data-product-id="vinho1">
+                    <div class="product-image-container">
+                        <img class="product-image" src="/vinharia-agnello/src/imgs/vinho1.png" alt="Lena Elamrak Stodar">
+                        <div class="product-overlay">
+                            <button class="product-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Lena Elamrak Stodar</h3>
+                        <p class="product-description">
+                            Vinho tinto encorpado com aromas intensos de frutas maduras, especiarias e toques sutis de madeira. Na boca, é equilibrado, com taninos bem estruturados e final persistente.
+                        </p>
+                        <div class="product-meta">
+                            <div class="product-price">R$ 189,00</div>
+                            <div class="product-rating">
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star-half-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="stock-display">
+                            <span>Em estoque:</span>
+                            <span class="stock-count" data-stock="15">15</span>
+                        </div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product-id="vinho2">
+                    <div class="product-image-container">
+                        <img class="product-image" src="/vinharia-agnello/src/imgs/vinho2.png" alt="Lurin Bage">
+                        <div class="product-overlay">
+                            <button class="product-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Lurin Bage</h3>
+                        <p class="product-description">
+                            Vinho tinto refinado que combina sutileza e profundidade. Apresenta notas aromáticas de frutas negras, leves toques florais e um fundo terroso que remete ao terroir de origem.
+                        </p>
+                        <div class="product-meta">
+                            <div class="product-price">R$ 159,00</div>
+                            <div class="product-rating">
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <div class="stock-display">
+                            <span>Em estoque:</span>
+                            <span class="stock-count" data-stock="8">8</span>
+                        </div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product-id="vinho3">
+                    <div class="product-image-container">
+                        <img class="product-image" src="/vinharia-agnello/src/imgs/vinho3.png" alt="HNORE">
+                        <div class="product-overlay">
+                            <button class="product-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">HNORE</h3>
+                        <p class="product-description">
+                            Um tinto raro, de presença marcante e elegância silenciosa. Produzido a partir de uvas selecionadas em colheita manual, entrega um equilíbrio impressionante entre potência e finesse.
+                        </p>
+                        <div class="product-meta">
+                            <div class="product-price">R$ 249,00</div>
+                            <div class="product-rating">
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <div class="stock-display">
+                            <span>Em estoque:</span>
+                            <span class="stock-count" data-stock="3">3</span>
+                        </div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="espumantes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="products-title">Espumantes</h2>
+                <p class="section-subtitle">Celebre momentos especiais com nossos espumantes</p>
+            </div>
             
-                Hoje, já na quarta geração, a Vinícola Agnello une tradição e inovação. Segue sendo uma empresa 100% familiar, com vinhos premiados e presença crescente no mercado nacional.
-            </p>
+            <div class="products-grid">
+                <div class="product-card" data-product-id="espumante1">
+                    <div class="product-image-container">
+                        <img class="product-image" src="/vinharia-agnello/src/imgs/espumante1.png" alt="BERENSTEIN DIAZAKPAMOS">
+                        <div class="product-overlay">
+                            <button class="product-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">BERENSTEIN DIAZAKPAMOS</h3>
+                        <p class="product-description">
+                            Refinado, vibrante e irresistivelmente dourado. Produzido com precisão e delicadeza, traz perlage fina e contínua que revela sua qualidade superior desde o primeiro olhar.
+                        </p>
+                        <div class="product-meta">
+                            <div class="product-price">R$ 179,00</div>
+                            <div class="product-rating">
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star-half-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="stock-display">
+                            <span>Em estoque:</span>
+                            <span class="stock-count" data-stock="12">12</span>
+                        </div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product-id="espumante2">
+                    <div class="product-image-container">
+                        <img class="product-image" src="/vinharia-agnello/src/imgs/espumante2.png" alt="MAIGPAN UIIPIVELEPER">
+                        <div class="product-overlay">
+                            <button class="product-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">MAIGPAN UIIPIVELEPER</h3>
+                        <p class="product-description">
+                            Delicado na cor, poderoso na presença. Traz o frescor do rosé com a elegância de uma celebração bem vivida. Seus tons rosados reluzem à luz, enquanto bolhas finas dançam num ritmo constante.
+                        </p>
+                        <div class="product-meta">
+                            <div class="product-price">R$ 169,00</div>
+                            <div class="product-rating">
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <div class="stock-display">
+                            <span>Em estoque:</span>
+                            <span class="stock-count" data-stock="9">9</span>
+                        </div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product-id="espumante3">
+                    <div class="product-image-container">
+                        <img class="product-image" src="/vinharia-agnello/src/imgs/espumante3.png" alt="PRAMIKE IALAELOA">
+                        <div class="product-overlay">
+                            <button class="product-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">PRAMIKE IALAELOA</h3>
+                        <p class="product-description">
+                            A definição de requinte engarrafado. Vestido em dourado rosé com reflexos cintilantes, exala sofisticação antes mesmo de ser servido. Sua apresentação impecável é apenas a promessa do que vem depois.
+                        </p>
+                        <div class="product-meta">
+                            <div class="product-price">R$ 219,00</div>
+                            <div class="product-rating">
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <div class="stock-display">
+                            <span>Em estoque:</span>
+                            <span class="stock-count" data-stock="5">5</span>
+                        </div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="sucos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="products-title">Sucos</h2>
+                <p class="section-subtitle">Sucos naturais de uva para toda a família</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card" data-product-id="suco1">
+                    <div class="product-image-container">
+                        <img class="product-image" src="/vinharia-agnello/src/imgs/suco1.png" alt="SPARE JULIE">
+                        <div class="product-overlay">
+                            <button class="product-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">SPARE JULIE</h3>
+                        <p class="product-description">
+                            A essência da uva em sua forma mais pura. Produzido com uvas selecionadas colhidas no auge da maturação, cada gole entrega um sabor intenso, fresco e naturalmente doce.
+                        </p>
+                        <div class="product-meta">
+                            <div class="product-price">R$ 39,90</div>
+                            <div class="product-rating">
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star-half-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="stock-display">
+                            <span>Em estoque:</span>
+                            <span class="stock-count" data-stock="24">24</span>
+                        </div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product-id="suco2">
+                    <div class="product-image-container">
+                        <img class="product-image" src="/vinharia-agnello/src/imgs/suco2.png" alt="EZAIVUSIO">
+                        <div class="product-overlay">
+                            <button class="product-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">EZAIVUSIO</h3>
+                        <p class="product-description">
+                            Extraído de uvas nobres, colhidas no auge do frescor, ele carrega a pureza da fruta e a intensidade da cor em cada gota. Criado para quem valoriza sabor com identidade.
+                        </p>
+                        <div class="product-meta">
+                            <div class="product-price">R$ 42,90</div>
+                            <div class="product-rating">
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <div class="stock-display">
+                            <span>Em estoque:</span>
+                            <span class="stock-count" data-stock="18">18</span>
+                        </div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product-id="suco3">
+                    <div class="product-image-container">
+                        <img class="product-image" src="/vinharia-agnello/src/imgs/suco3.png" alt="KEANO THE JUICE">
+                        <div class="product-overlay">
+                            <button class="product-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">KEANO THE JUICE</h3>
+                        <p class="product-description">
+                            Feito com uvas frescas e frutas vermelhas selecionadas, traz uma expressão vibrante de sabor e cor. Com visual hipnotizante e aroma instigante, ele entrega uma experiência sensorial única.
+                        </p>
+                        <div class="product-meta">
+                            <div class="product-price">R$ 45,90</div>
+                            <div class="product-rating">
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <div class="stock-display">
+                            <span>Em estoque:</span>
+                            <span class="stock-count" data-stock="15">15</span>
+                        </div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="winery-info" id="nossa-vinicola">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossa Vinícola</h2>
+                <p class="section-subtitle">Conheça mais sobre nosso processo de produção e tradição</p>
+            </div>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <h3 class="info-title">Processo de Vinificação</h3>
+                    <p class="info-text">
+                        Nossa vinificação combina métodos tradicionais italianos com tecnologia moderna. Cada etapa é cuidadosamente monitorada, desde a seleção manual das uvas até o engarrafamento. Utilizamos tanques de aço inoxidável com controle de temperatura para fermentação e barris de carvalho francês e americano para o envelhecimento, garantindo a complexidade e equilíbrio dos nossos vinhos.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3 class="info-title">Terroir Único</h3>
+                    <p class="info-text">
+                        Nossos vinhedos estão localizados a 680 metros de altitude, em solo granítico com boa drenagem e exposição solar ideal. O microclima da Serra Gaúcha, com dias quentes e noites frias, proporciona uma amplitude térmica perfeita para o desenvolvimento de aromas complexos e acidez equilibrada nas uvas. Essa combinação única de fatores geográficos se traduz na personalidade marcante dos nossos vinhos.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="info-title">Sustentabilidade</h3>
+                    <p class="info-text">
+                        Adotamos práticas sustentáveis em toda nossa produção. Utilizamos manejo integrado de pragas, reduzindo o uso de defensivos químicos. Nossa vinícola conta com sistema de captação de água da chuva e tratamento de efluentes. Os resíduos orgânicos da produção são compostados e retornam aos vinhedos como adubo natural, fechando um ciclo sustentável que respeita o meio ambiente e valoriza nosso terroir.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="info-title">Premiações</h3>
+                    <p class="info-text">
+                        Ao longo de nossa história, temos sido reconhecidos em concursos nacionais e internacionais. Nosso espumante BERENSTEIN DIAZAKPAMOS conquistou medalha de ouro no Concurso Mundial de Bruxelas, enquanto o tinto HNORE recebeu 92 pontos na avaliação da Decanter. Essas conquistas refletem nosso compromisso com a excelência e a expressão autêntica do terroir brasileiro no cenário mundial de vinhos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-section" id="compras">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Seu Carrinho</h2>
+                <p class="section-subtitle">Finalize sua compra de produtos selecionados</p>
+            </div>
+            
+            <div class="cart-container">
+                <div class="cart-header">
+                    <h2>Carrinho de Compras</h2>
+                </div>
+                
+                <div class="cart-content">
+                    <div id="cart-items" class="cart-items">
+                        <p>Seu carrinho está vazio.</p>
+                    </div>
+                    
+                    <div class="cart-summary">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span id="cart-total">R$ 0,00</span>
+                        </div>
+                        
+                        <div class="cart-buttons">
+                            <button id="clear-cart" class="cart-btn clear-btn">Limpar Carrinho</button>
+                            <button id="checkout" class="cart-btn checkout-btn">Finalizar Compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3 class="footer-logo">Vinícola Agnello</h3>
+                <p>Desde 1932, respeitando a uva, honrando a taça. Uma história de trabalho, terra, família e orgulho.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-container">
+                <h3 class="footer-title">Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#vinicola">Nossa História</a></li>
+                    <li><a href="#vinhos">Vinhos</a></li>
+                    <li><a href="#espumantes">Espumantes</a></li>
+                    <li><a href="#sucos">Sucos</a></li>
+                    <li><a href="#compras">Carrinho</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3 class="footer-title">Newsletter</h3>
+                <p>Inscreva-se para receber novidades, promoções e eventos exclusivos.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu email" class="form-control">
+                    <button type="submit" class="form-btn">Inscrever</button>
+                </form>
+            </div>
         </div>
         
-    </div>
-
-    <div class="destaque-div">
-
-        <p class="destaque">
-            <h3 class="dest">Espumantes premiados: leveza com identidade
-            Especialidade da casa, os espumantes Agnello são elaborados com dois métodos consagrados:</h3>
-
-            <div class="destaque-text">
-
-                <li class="categorias">
-                    Charmat (ou Martinotti): fermentação em tanques de inox, ideal para espumantes jovens, frutados e refrescantes.
-                </li>
-                <li class="categorias">
-                    Tradicional (Champenoise): segunda fermentação na garrafa, com longos períodos de autólise, criando espumantes estruturados, elegantes e persistentes.
-                </li>
-            </div>
-
-        </p>
-    
-    </div>
-
-    <div class="visita-div">
-
-        <p class="visita">
-            <h3 class="dest">Visitação e experiência enoturística.</h3>
-
-            <h4 class="text2">
-                A vinícola está aberta à visitação com agendamento, oferecendo:
-            </h4>
-
-            <div class="visita-text">
-
-                <li class="categorias">
-                    Tour guiado pela produção e cave subterrânea.
-                </li>
-                <li class="categorias">
-                    Degustação de rótulos selecionados.
-                </li>
-                <li class="categorias">
-                    Loja com venda direta e produtos exclusivos.
-                </li>
-                <li class="categorias">
-                    Eventos sazonais com gastronomia e música.
-                </li>
-                <li class="categorias">
-                    Cada visitante conhece de perto o que torna a Vinícola Agnello diferente: o envolvimento da família em todas as etapas e a busca por excelência sem frescura.
-                </li>
-
-                </p>
-
-            </div>
-        </p>
-
-    </div>
-
-    <div class="slogan-div">
-
-        <p class="slogan">
-
-            <h3 class="dest">Compromisso com o que importa</h3>
-
-            <div class="slogan-text">
-
-                <p class="text">
-                    Agnello não é só uma vinícola. É uma história de trabalho, terra, família e orgulho. Aqui, tradição não é marketing — é prática. E o vinho não é produto — é consequência.
-    
-                    Vinícola Agnello. Desde 1932, respeitando a uva, honrando a taça.
-    
-                </p>
-
-            </div>
-
-        </p>
-    
-    </div>
-
-    <h1 class="vinhos" id="vinhos">Vinhos</h1>
-
-    <div class="div-vinho">
-        <img class="vinho" src="/vinharia-agnello/src/imgs/vinho1.png">
-        <h2 class="vinho-nome">Lena Elamrak Stodar – Vinho Tinto de Personalidade Marcante</h2>
-
-        <div class="vinho-text">
-            <p class="vinho-text">Com um visual elegante e rótulo sofisticado, o Lena Elamrak Stodar revela um vinho tinto encorpado, ideal para ocasiões especiais. Produzido com cuidado artesanal, entrega aromas intensos de frutas maduras, especiarias e toques sutis de madeira. Na boca, é equilibrado, com taninos bem estruturados e final persistente. Perfeito para harmonizar com carnes vermelhas, massas com molhos robustos ou queijos curados. Um rótulo que combina tradição e elegância, pronto para impressionar.</p>
+        <div class="footer-bottom">
+            <p class="copyright">© 2025 Vinícola Agnello. Todos os direitos reservados.</p>
         </div>
-    
-    </div>
-    <div class="div-vinho">
-        <img class="vinho" src="/vinharia-agnello/src/imgs/vinho2.png">
-        <h2 class="vinho-nome">Lurin Bage – Elegância e Sofisticação em Cada Gole</h2>
+    </footer>
 
-        <div class="vinho-text">
-            <p class="vinho-text">O Lurin Bage é um vinho tinto refinado que combina sutileza e profundidade. De visual imponente e rótulo minimalista, expressa modernidade e classe. Apresenta notas aromáticas de frutas negras, leves toques florais e um fundo terroso que remete ao terroir de origem. Em boca, é macio, com acidez equilibrada e um final longo que convida ao próximo gole. Ideal para momentos mais íntimos, acompanhando queijos suaves, carnes grelhadas ou simplesmente uma boa conversa.</p>
-        </div>
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
-    </div>
-    <div class="div-vinho">
-        <img class="vinho" src="/vinharia-agnello/src/imgs/vinho3.png">
-        <h2 class="vinho-nome">HNORE – O Excepcional Não Se Explica, Se Prova</h2>
-
-        <div class="vinho-text">
-            <p>HNORE não é apenas um vinho. É uma experiência. Um tinto raro, de presença marcante e elegância silenciosa, feito para quem reconhece a diferença entre o bom e o inesquecível. Produzido a partir de uvas selecionadas em colheita manual, entrega um equilíbrio impressionante entre potência e finesse.
-            No nariz, revela camadas complexas: frutas escuras maduras, toques de especiarias finas, notas de cacau e um leve traço mineral. Na boca, é profundo, com taninos aveludados, acidez na medida e um final longo que permanece na memória.
-            Perfeito para harmonizações refinadas ou para ser o protagonista da noite. HNORE é o vinho que transforma qualquer momento em ocasião.</p>
-        </div>
-
-    </div>
-
-    <h1 class="espumantes" id="espumantes">Espumantes</h1>
-
-    <div class="div-espumante">
-        <img class="espumante" src="/vinharia-agnello/src/imgs/espumante1.png">
-        <h2 class="espumante-nome">BERENSTEIN DIAZAKPAMOS – Elegância Borbulhante em Forma de Brinde</h2>
-
-        <div class="espumante-text">
-            <p class="espumante-text">Refinado, vibrante e irresistivelmente dourado. O espumante Berenstein Diazakpamos é a definição líquida de celebração. Produzido com precisão e delicadeza, traz perlage fina e contínua que revela sua qualidade superior desde o primeiro olhar. No nariz, exala aromas florais, frutas de caroço e um toque sutil de brioche.
-                Na boca, surpreende com frescor, leveza e um equilíbrio impecável entre acidez e cremosidade. Cada taça é um convite para brindar momentos especiais — de conquistas íntimas a grandes encontros.
-                Versátil, acompanha entradas sofisticadas, frutos do mar, sobremesas leves ou simplesmente um pôr do sol inesquecível. Diazakpamos não é só um espumante. É a promessa de que algo bom está acontecendo.</p>
-        </div>
-    
-    </div>
-    <div class="div-espumante">
-        <img class="espumante" src="/vinharia-agnello/src/imgs/espumante2.png">
-        <h2 class="espumante-nome">MAIGPAN UIIPIVELEPER – O Brilho do Rosé, a Alma da Festa</h2>
-
-        <div class="espumante-text">
-            <p class="espumante-text">Delicado na cor, poderoso na presença. O espumante Maigpan Uiipiveleper traz o frescor do rosé com a elegância de uma celebração bem vivida. Seus tons rosados reluzem à luz, enquanto bolhas finas dançam num ritmo constante, antecipando uma experiência vibrante.
-                Aromas de frutas vermelhas frescas — morango, framboesa e um toque de romã — se misturam a notas cítricas e florais. No paladar, entrega leveza, cremosidade e um final seco, refrescante e envolvente.
-                Ideal para brindar conquistas, acompanhar canapés sofisticados, pratos orientais ou simplesmente saborear a vida com mais cor. Uiipiveleper não é só espumante — é um estado de espírito.
-                </p>
-        </div>
-
-    </div>
-    <div class="div-espumante">
-        <img class="espumante" src="/vinharia-agnello/src/imgs/espumante3.png">
-        <h2 class="espumante-nome">PRAMIKE IALAELOA – Pura Elegância em Forma de Borbulha</h2>
-
-        <div class="espumante-text">
-            <p>O espumante Pramike Ialaeloa é a definição de requinte engarrafado. Vestido em dourado rosé com reflexos cintilantes, exala sofisticação antes mesmo de ser servido. Sua apresentação impecável é apenas a promessa do que vem depois.
-                No nariz, uma harmonia elegante de casca de laranja cristalizada, flor de laranjeira e notas delicadas de frutas de caroço, como pêssego branco e physalis. Em boca, revela uma textura sedosa, mousse fina e um frescor preciso, com final longo e memorável.
-                Produzido em lote exclusivo, Ialaeloa é o espumante para momentos raros — daqueles que pedem mais do que um brinde, pedem silêncio e admiração.
-                Mais do que uma bebida, Pramike Ialaeloa é uma experiência de luxo sutil, reservada para quem sabe reconhecer o extraordinário.</p>
-        </div>
-
-    </div>
-
-    <h1 class="sucos" id="sucos">Sucos</h1>
-
-    <div class="div-suco">
-        <img class="suco" src="/vinharia-agnello/src/imgs/suco1.png">
-        <h2 class="suco-nome">SPARE JULIE – Suco de Uva Premium</h2>
-
-        <div class="suco-text">
-            <p class="suco-text">O Spare Julie não é apenas um suco. É a essência da uva em sua forma mais pura. Produzido com uvas selecionadas colhidas no auge da maturação, cada gole entrega um sabor intenso, fresco e naturalmente doce, sem adição de açúcar ou conservantes.
-                Visualmente hipnotizante, com sua coloração rubi profunda e brilhante, é um convite aos sentidos. No paladar, revela corpo marcante, textura aveludada e notas de frutas maduras com um toque sutil de taninos naturais, lembrando o frescor do vinhedo.
-                Ideal para quem busca sabor autêntico e qualidade superior, seja à mesa, no café da manhã ou em um momento especial.
-                Spare Julie é suco, mas com alma de vinho.</p>
-        </div>
-    
-    </div>
-    <div class="div-suco">
-        <img class="suco" src="/vinharia-agnello/src/imgs/suco2.png">
-        <h2 class="suco-nome">EZAIVUSIO – Não é apenas um suco. É um ritual.</h2>
-
-        <div class="suco-text">
-            <p class="suco-text">Extraído de uvas nobres, colhidas no auge do frescor, ele carrega a pureza da fruta e a intensidade da cor em cada gota. Criado para quem valoriza sabor com identidade, EZAIVUSIO entrega elegância natural sem perder a força da essência.
-                No nariz, uma explosão de aromas: uvas frescas, nuances florais sutis e um toque de framboesa silvestre. Na boca, surpreende com textura sedosa, doçura equilibrada e uma acidez leve que desperta os sentidos. O final é limpo, marcante, e convida ao próximo gole.
-                Ideal para acompanhar bons encontros, sobremesas delicadas ou simplesmente para tornar o dia mais especial.
-                EZAIVUSIO é o suco que prova que o simples também pode ser extraordinário.</p>
-        </div>
-
-    </div>
-    <div class="div-suco">
-        <img class="suco" src="/vinharia-agnello/src/imgs/suco3.png">
-        <h2 class="suco-nome">KEANO THE JUICE – É mais que sabor. É personalidade engarrafada.</h2>
-
-        <div class="suco-text">
-            <p>Feito com uvas frescas e frutas vermelhas selecionadas, KEANO traz uma expressão vibrante de sabor e cor. Com visual hipnotizante e aroma instigante, ele entrega uma experiência sensorial pensada para quem aprecia o detalhe.
-                Ao olfato, mistura notas de uva rosada, morango maduro e um leve toque de cereja fresca. Em boca, é suculento e macio, com doçura presente mas sutil, equilibrada por uma acidez leve que dá frescor e leveza ao gole. O final é frutado, elegante e impossível de esquecer.
-                Perfeito para brindar bons momentos, acompanhar sobremesas finas ou ser servido gelado como destaque em qualquer ocasião.
-                KEANO é o suco que eleva o simples ao nível do extraordinário.
-                </p>
-        </div>
-
-    </div>
-
-    <h1 class="compras" id="compras">Compras</h1>
-
+    <script src="src/js/front.js"></script>
     <script src="src/js/script.js"></script>
 </body>
 </html>
