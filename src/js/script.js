@@ -9,13 +9,13 @@ if (nome === null || nome === "" || nome === " ") {
 console.log(`Nome do vinho: ${nome}`);
 
 var tipoVinho = prompt("Digite o tipo do vinho (Tinto, Branco ou Rosé):").toLowerCase();
-if (tipoVinho != "tinto" || tipoVinho != "branco" || tipoVinho != "rosé") {
+if (tipoVinho == "tinto" || tipoVinho == "branco" || tipoVinho == "rosé") {
+	alert("tipo do vinho cadastrado com sucesso! Veja os detalhes no console");
+} 
+else {
 	alert(`${tipoVinho} não é uma das opcões de vinho`);
 	tipoVinho = prompt("Digite o tipo do vinho (Tinto, Branco ou Rosé):");
 	alert("Tipo do vinho cadastrado com sucesso! Veja os detalhes no console");
-} 
-else {
-	alert("tipo do vinho cadastrado com sucesso! Veja os detalhes no console");
 }
 console.log(`Tipo do vinho: ${tipoVinho}`);
 
