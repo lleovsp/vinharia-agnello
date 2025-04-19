@@ -6,6 +6,7 @@ if (nome === null || nome === "" || nome === " ") {
 } else {
 	alert("Nome cadastrado com sucesso! Veja os detalhes no console");
 }
+console.log(`Nome do vinho: ${nome}`);
 
 var tipoVinho = prompt("Digite o tipo do vinho (Tinto, Branco ou Rosé):").toLowerCase();
 if (tipoVinho != "tinto" || tipoVinho != "branco" || tipoVinho != "rosé") {
@@ -16,6 +17,7 @@ if (tipoVinho != "tinto" || tipoVinho != "branco" || tipoVinho != "rosé") {
 else {
 	alert("tipo do vinho cadastrado com sucesso! Veja os detalhes no console");
 }
+console.log(`Tipo do vinho: ${tipoVinho}`);
 
 var safraVinho = prompt("Digite o ano da safra do vinho:");
 if (safraVinho === null || safraVinho === "" || safraVinho === " ") {
@@ -48,9 +50,11 @@ if (
 } else {
 	alert("Quantidade cadastrada com sucesso! Verificar o Console para classificação e detalhes da quantidade de estoque");
 }
+console.log(`Quantidade em estoque: ${qntdEstoque}`);
 
 // verificação de estoque
 if (parseInt(qntdEstoque) < 5) {
-	alert("Estoque baixo, favor verificar");
+	console.log("Estoque baixo, favor verificar");
 }
 
+alert("Todas informações estão exibidas no console")
