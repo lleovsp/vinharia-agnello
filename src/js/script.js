@@ -26,6 +26,15 @@ if (safraVinho === null || safraVinho === "" || safraVinho === " ") {
 	alert("Ano da Safra do vinho cadastrado com sucesso! Veja os detalhes no console");
 }
 
+// verificação do ano da safra
+if (safraVinho >= 2020){
+	console.log("Classificação: Vinho jovem")
+} else if (safraVinho >= 2015 && safraVinho <= 2019){
+	console.log("Classificação: Vinho amadurecido")
+} else if (safraVinho < 2015){
+	console.log("Classificação: Vinho antigo")
+}
+
 var qntdEstoque = prompt("Digite a quantidade em estoque do vinho:");
 //validação de entrada de dados
 if (
@@ -44,3 +53,4 @@ if (
 if (parseInt(qntdEstoque) < 5) {
 	alert("Estoque baixo, favor verificar");
 }
+
